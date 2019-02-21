@@ -19,7 +19,9 @@ class CreatePollsTable extends Migration
             $table->string('poll_name')->nullable();
             $table->string('poll_type')->nullable();
             $table->string('poll_question')->nullable();
-            $table->string('poll_answers')->nullable();
+            $table->string('poll_first_answer')->nullable();
+            $table->string('poll_second_answer')->nullable();
+            $table->string('poll_third_answer')->nullable();
             $table->string('poll_audience')->nullable();
             $table->string('poll_audience_gender')->nullable();
             $table->string('poll_audience_age_from')->nullable();

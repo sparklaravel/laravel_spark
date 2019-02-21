@@ -68,7 +68,9 @@
                             <span id="number-of-questions-poll">1 question</span>
                             <span id="creation-date-poll">14.11.2018</span>
                             <span id="creation-time-poll">20:56</span>
-                            <a href="" class="view-poll-link"><img src="img/userpage/view.svg" alt="View image"> view</a>
+                              <div class="nav nav-tabs d-flex flex-column justify-content-center align-items-center" id="nav-tab" role="tablist">
+                                <a class="nav-item view-poll-link" id="nav-profile-tab" data-toggle="tab" href="#poll-results" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="img/userpage/view.svg" alt="View image"> view</a>
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -371,7 +373,7 @@
                                   <div class="col-lg-4 col-md-12 d-flex flex-column">
                                       <button class="takeImg"><img src="img/camera.svg" alt="Camera"></button>
                                       <button class="closeBlock"><img src="img/close.svg" alt="CloseIt"></button>
-                                      <input name="poll_answers" class="default-input" type="text" value="poll_answers" placeholder="Enter answer">
+                                      <input name="poll_first_answer" class="default-input" type="text" placeholder="Enter answer">
                                       <label for="file-upload" class="custom-file-upload">
                                         <div class="d-flex flex-column align-items-center dashed-border">
                                             <span>Image 1</span>
@@ -381,7 +383,7 @@
                                       <input id="file-upload" type="file">
                                   </div>
                                   <div class="col-lg-4 col-md-12 d-flex flex-column">
-                                      <input class="default-input" type="text" placeholder="Enter answer">
+                                      <input name="poll_second_answer" class="default-input" type="text" placeholder="Enter answer">
                                       <label for="file-upload" class="custom-file-upload">
                                         <div class="d-flex flex-column align-items-center dashed-border">
                                             <span>Image 1</span>
@@ -391,7 +393,7 @@
                                       <input id="file-upload" type="file">
                                   </div>
                                   <div class="col-lg-4 col-md-12 d-flex flex-column">
-                                      <input class="default-input" type="text" placeholder="Enter answer">
+                                      <input name="poll_third_answer" class="default-input" type="text" placeholder="Enter answer">
                                       <label for="file-upload" class="custom-file-upload">
                                         <div class="d-flex flex-column align-items-center dashed-border">
                                             <span>Image 1</span>
@@ -509,16 +511,16 @@
                     <div class="col-lg-9 col-md-8 col-sm-6 d-flex justify-content-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-start">
                       <img class="operation-img" src="img/userpage/poll-saver.svg" alt="Poll saver image">
                       <div class="d-flex flex-column">
-                        <h3 class="operation-name">Poll Saver</h3>
+                        <h3 class="operation-name">{{ $last_poll->poll_name }}</h3>
                         <div class="d-flex results-poll-list">
                           <span id="number-of-questions-poll">1 question</span>
                           <span id="type-of-poll-result">
                             <img src="img/dot-result-page.svg" alt=""> 
-                            single choice
+                            {{ $last_poll->poll_type }}
                           </span>
-                          <span id="audience-range-result">Woman 30-40</span>
-                          <span id="creation-date-poll">14.11.2018</span>
-                          <span id="creation-time-poll">20:56</span>
+                          <span id="audience-range-result">{{ $last_poll->poll_audience }}</span>
+                          <span id="creation-date-poll">{{ $last_poll->created_at }}</span>
+                          <span id="creation-time-poll"></span>
                         </div>
                       </div>
                     </div>
@@ -580,7 +582,7 @@
 
                   <!--Image results-->
                   <div class="row d-flex flex-column align-items-center">
-                    <h2 id="poll-name-of-question-result">What berry do you like the most?</h2>
+                    <h2 id="poll-name-of-question-result">{{ $last_poll->poll_question }}</h2>
                     <div class="d-flex">
                         <div class="most-popular-answer-img-result d-flex flex-column align-items-center">
                           <img class="hoverOnImage" src="img/test.jpg" alt="">
@@ -594,15 +596,15 @@
                     <div class="row d-flex less-popular-stat-result">
                       <div class="col-lg-4 d-flex flex-column align-items-center">
                         <img src="img/test2.jpg" alt="">
-                        <p><span class="most-popular-stat-result">10</span>%</p> 
+                        <p><span class="most-popular-stat-result">{{ $last_poll->poll_first_answer }}</p> 
                       </div>
                       <div class="col-lg-4 d-flex flex-column align-items-center">
                           <img src="img/test2.jpg" alt="">
-                          <p><span class="most-popular-stat-result">15</span>%</p>
+                          <p><span class="most-popular-stat-result">{{ $last_poll->poll_second_answer }}</p>
                       </div>
                       <div class="col-lg-4 d-flex flex-column align-items-center">
                           <img src="img/test2.jpg" alt="">
-                          <p><span class="most-popular-stat-result">5</span>%</p>
+                          <p><span class="most-popular-stat-result">{{ $last_poll->poll_third_answer }}</p>
                       </div>
                     </div>
                   </div>
