@@ -131,8 +131,8 @@ z-index: 1;}
               <p class="plan-price-description">Lorem ipsum</p>
               <p class="plan-trial">14 days trial</p>
               <div class="d-flex justify-content-center">
-                <a href="">
-                  <button>Get started</button>
+                <a>
+                  <button class="link-see-all-posts" data-toggle="modal" data-target="#plan1">Get started</button>
                 </a>
               </div>
             </div>
@@ -146,8 +146,8 @@ z-index: 1;}
               <p class="plan-price-description-popular">Lorem ipsum</p>
               <p class="plan-trial">14 days trial</p>
               <div class="d-flex justify-content-center">
-                <a href="">
-                  <button>Get started</button>
+                <a>
+                  <button class="link-see-all-posts" data-toggle="modal" data-target="#plan2">Get started</button>
                 </a>
               </div>
             </div>
@@ -161,15 +161,107 @@ z-index: 1;}
                 <p class="plan-price-description">Lorem ipsum</p>
                 <p class="plan-trial">14 days trial</p>
                 <div class="d-flex justify-content-center">
-                  <a href="">
-                    <button>Get started</button>
+                  <a>
+                    <button class="link-see-all-posts" data-toggle="modal" data-target="#plan3">Get started</button>
                   </a>
                 </div>
               </div>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
+  </div>
+
+
+  <!-- All Polls-->
+
+  <div class="modal fade" id="plan3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div style="height: 450px;" class="modal-body">
+                <section class="plans__primary">
+                  <div id="choose-your-plan" class="row description-choose-plan">
+                  <div class="col-lg-12 d-flex flex-column align-items-center">
+                              <div class="plan-block d-flex flex-column align-items-center">
+                                <h3>Pro plus plan</h3>
+                                <span class="price-tag"><sup>$</sup><b>179</b>/ mo</span>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-trial">14 days trial</p>
+                                <div class="d-flex justify-content-center">
+                                  <a>
+                                    <button class="link-see-all-posts" data-toggle="modal" data-target="#allPolls">Get started</button>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                  </section>
+                </div>
+            </div>
+        </div>{{-- /modal-content --}}
+    </div>{{-- /modal-dialog --}}
+</div>{{-- /modal fade --}}
+
+<div class="modal fade" id="plan2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div style="height: 450px;" class="modal-body">
+                <section class="plans__primary">
+                  <div id="choose-your-plan" class="row description-choose-plan">
+                  <div class="col-lg-12 d-flex flex-column align-items-center">
+                              <div class="plan-block d-flex flex-column align-items-center">
+                                <h3>Pro plus plan</h3>
+                                <span class="price-tag"><sup>$</sup><b>149</b>/ mo</span>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-trial">14 days trial</p>
+                                <div class="d-flex justify-content-center">
+                                  <a>
+                                    <button class="link-see-all-posts" data-toggle="modal" data-target="#allPolls">Get started</button>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                  </section>
+                </div>
+            </div>
+        </div>{{-- /modal-content --}}
+    </div>{{-- /modal-dialog --}}
+</div>{{-- /modal fade --}}
+
+<div class="modal fade" id="plan1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div style="height: 450px;" class="modal-body">
+                <section class="plans__primary">
+                  <div id="choose-your-plan" class="row description-choose-plan">
+                  <div class="col-lg-12 d-flex flex-column align-items-center">
+                              <div class="plan-block d-flex flex-column align-items-center">
+                                <h3>Pro plus plan</h3>
+                                <span class="price-tag"><sup>$</sup><b>49</b>/ mo</span>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-price-description">Lorem ipsum</p>
+                                <p class="plan-trial">14 days trial</p>
+                                <div class="d-flex justify-content-center">
+                                  <a>
+                                    <button class="link-see-all-posts" data-toggle="modal" data-target="#allPolls">Get started</button>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                  </section>
+                </div>
+            </div>
+        </div>{{-- /modal-content --}}
+    </div>{{-- /modal-dialog --}}
+</div>{{-- /modal fade --}}
+
 
 <!-- Initialize Bootstrap functionality -->
 <script>

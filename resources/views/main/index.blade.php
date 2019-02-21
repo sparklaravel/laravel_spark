@@ -104,7 +104,7 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <div id="app1">
+                                <div>
                                     <div v-for="id in ids" class="form-group">    
                                         <table class="table table-hover table-bordered">
 

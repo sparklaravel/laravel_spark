@@ -28,10 +28,10 @@
           <div class="col-lg-6 navigation-desktop d-none d-lg-block">
             
             <ul>
-              <li><a href="">How it works</a></li>
+              <li><a href="#">How it works</a></li>
               <li><a href="{{ url('/plans') }}">Plans</a></li>
-              <li><a href="">F.A.Q.</a></li>
-              <li><a href="{{ url('/plans') }}">Plans</a></li>
+              <li><a href="#">F.A.Q.</a></li>
+              <li><a href="#">Placeholder</a></li>
             </ul>
           </div>
 
