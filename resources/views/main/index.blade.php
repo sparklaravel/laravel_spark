@@ -63,11 +63,11 @@
                       <div class="col-lg-7 col-md-8 col-sm-6 d-flex justify-content-center justify-content-xl-start justify-content-lg-start justify-content-md-start justify-content-sm-start">
                         <img class="operation-img" src="img/userpage/poll-saver.svg" alt="Poll saver image">
                         <div class="d-flex flex-column">
-                          <h3 class="operation-name">Poll Saver</h3>
+                          <h3 class="operation-name">{{ $last_poll->poll_name }}</h3>
                           <div class="d-flex information-poll-list">
                             <span id="number-of-questions-poll">1 question</span>
-                            <span id="creation-date-poll">14.11.2018</span>
-                            <span id="creation-time-poll">20:56</span>
+                            <span id="creation-date-poll">{{ $last_poll->created_at }}</span>
+                            <span id="creation-time-poll"></span>
                               <div class="nav nav-tabs d-flex flex-column justify-content-center align-items-center" id="nav-tab" role="tablist">
                                 <a class="nav-item view-poll-link" id="nav-profile-tab" data-toggle="tab" href="#poll-results" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="img/userpage/view.svg" alt="View image"> view</a>
                               </div>

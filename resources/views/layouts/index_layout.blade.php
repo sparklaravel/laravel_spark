@@ -37,7 +37,7 @@
           <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-end account-panel-info">
             <div>
               <img src="" alt="">
-              <p class="username-userpage">Danny Figueros</p>
+              <p style="padding-top: 15%;" class="username-userpage">Danny Figueros</p>
             </div>
             
             <div class="log-out-btn-block">
@@ -173,10 +173,6 @@
         
       </div>
       
-      {{-- test --}}
-      <div id="app">
-        @{{ message }}
-      </div>
     </footer>
 
       <script src="js/libs.min.js"></script>
